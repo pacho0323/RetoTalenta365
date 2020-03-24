@@ -45,10 +45,11 @@ public class CreateUserStepDefinition {
 	}
 
 	@Given("^that the user is on the website$")
-	public void thatTheUserIsOnTheWebsite() throws InterruptedException {
+	public void thatTheUserIsOnTheWebsite()  {
 
 		theActorCalled("juan").can(BrowseTheWeb.with(driver)).attemptsTo(Open.url(URL_ADVANTAGE),
-				WaitElement.forATime(10000));
+				WaitElement.forATime(5000)
+				);
 	}
 
 	@When("^the user log in with the data$")

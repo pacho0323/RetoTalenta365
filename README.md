@@ -11,7 +11,10 @@ Realizar la automatización para agregar un producto al carrito de compras.
 
 #Recomendaciones
 
-Tenga en cuenta que para la ejecución de la automatización se debe crear un usuario cambiando el username en el feature.
+
+* Tenga en cuenta que para la ejecución de la automatización se debe crear un usuario cambiando el username en el feature.
+* En la carpeta PruebaTecnica se encuentra la parte escrita
+* En la carpeta RetoTalenta365 se encuentra la prueba automatizada
 
 # Detalles generales
 

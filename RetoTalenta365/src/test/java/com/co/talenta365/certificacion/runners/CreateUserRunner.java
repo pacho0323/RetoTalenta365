@@ -10,7 +10,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features="src/test/resources/reto_talenta365.feature", 
 glue="com/co/talenta365/certificacion/stepdefinitions", 
-//tags = "@buyProduct",
+//tags = "@createUser",
 snippets=CAMELCASE)
 public class CreateUserRunner {
 

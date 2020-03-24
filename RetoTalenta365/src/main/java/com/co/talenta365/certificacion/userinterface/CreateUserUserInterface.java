@@ -9,7 +9,7 @@ public class CreateUserUserInterface {
 
 	}
 
-	public static final Target OPTLOGIN = Target.the("OPTION LOGIN").located(By.id("menuUserLink"));
+	public static final Target OPTLOGIN = Target.the("OPTION LOGIN").locatedBy("//a[@data-ng-click=\"login('loginMiniTitle')\"]");
 
 	public static final Target BTNCREATEACCOUNT = Target.the("BOTON CREAR CUENTA")
 			.locatedBy("//a[.='CREATE NEW ACCOUNT']");
@@ -33,6 +33,6 @@ public class CreateUserUserInterface {
 	public static final Target CHIAGREE = Target.the("IAGREE").located(By.name("i_agree"));
 	public static final Target BTNREGISTER = Target.the("BUTTON REGISTER").located(By.id("register_btnundefined"));
 
-	public static final Target USER = Target.the("USER CREATE").located(By.id("menuUserLink"));
+	public static final Target USER = Target.the("USER CREATE").locatedBy("//a[@id=\"menuUserLink\"]/span");
 
 }

@@ -13,7 +13,7 @@ Feature: Create user
 
     Examples: User
       | username | password     | confirmpassword | email                 | firtsName      | lastName       | phone      | country  | city     | address | state     | postalCode |
-      | pacho01  | Diciembre202 | Diciembre202    | pacho0323@hotmail.com | Juan Francisco | Builes Montoya | 3004500101 | Colombia | Medellin | calle 2 | Antioquia |     050001 |
+      | pacho00  | Diciembre202 | Diciembre202    | pacho0323@hotmail.com | Juan Francisco | Builes Montoya | 3004500101 | Colombia | Medellin | calle 2 | Antioquia |     050001 |
 
   @logIn
   Scenario Outline: Log in
@@ -24,7 +24,7 @@ Feature: Create user
 
     Examples: Login
       | username | password     |
-      | pacho01  | Diciembre202 |
+      | pacho00 | Diciembre202 |
 
   @buyProduct
   Scenario Outline: Buy a product
@@ -32,10 +32,10 @@ Feature: Create user
       | username   | password   |
       | <username> | <password> |
     And user search for product
-      | category   | product   |
-      | <category> | <product> |
-    Then the user should see the product selected <product>
+      | category   | products    |
+      | <category> | <products> |
+    Then the user should see the product selected <products>
 
     Examples: Product
-      | username | password     | category | product                      |
-      | pacho01  | Diciembre202 | LAPTOPS  | HP Pavilion 15t Touch Laptop |
+      | username | password     | category | products                     |
+      | pacho00  | Diciembre202 | LAPTOPS  | HP Pavilion 15t Touch Laptop |
